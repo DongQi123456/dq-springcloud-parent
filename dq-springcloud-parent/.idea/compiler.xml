@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="dq-config-service" />
         <module name="dq-consumer-movie-service" />
         <module name="dq-eureka-service" />
         <module name="dq-provider-user-service" />

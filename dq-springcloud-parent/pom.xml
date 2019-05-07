@@ -49,6 +49,7 @@
         <module>dq-eureka-service</module>
         <module>dq-provider-user-service</module>
         <module>dq-consumer-movie-service</module>
+        <module>dq-config-service</module>
     </modules>
 
 
