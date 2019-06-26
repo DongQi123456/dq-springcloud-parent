@@ -7,10 +7,26 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="dq-config-service" />
-        <module name="dq-consumer-movie-service" />
         <module name="dq-eureka-service" />
+        <module name="dq-security-service" />
+        <module name="dq-shiro-service" />
+        <module name="dq-zuul-service" />
+        <module name="dq-user-info-service" />
+        <module name="dq-consumer-movie-service" />
         <module name="dq-provider-user-service" />
+        <module name="order-info-service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="dq-txcln-service" target="1.8" />
+      <module name="dqtmservicec" target="1.8" />
+      <module name="tx-manager" target="1.8" />
+      <module name="txlcn-tm" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="txlcn-tm" options="" />
+    </option>
   </component>
 </project>

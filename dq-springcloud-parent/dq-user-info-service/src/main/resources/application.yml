@@ -1,0 +1,35 @@
+
+
+#DB Configuration
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/microservice
+#与Docker整合时可使用以下配置（也可以使用具体的IP+端口）
+#    url: jdbc:mysql://mysql:3306/microservice
+    username: root
+    password: root123
+  redis:
+    host: localhost
+    port: 6379
+  application:
+    name: user-info-service
+#logging
+#logging:
+#  level:
+#    com:
+#      itheima:
+#        springboot: debug
+logging:
+  level:
+    com.mapper: debug
+
+server:
+  port: @user.application.port@
+eureka:
+  instance:
+    prefer-ip-address: true    #是否显示主机的IP
+  client:
+    service-url:
+      defaultZone: http://@application.server.ip@:@eureka.application.port@/eureka/
+#      defaultZone: http://eureka-server:8761/eureka/

@@ -1,0 +1,25 @@
+server:
+  port: 7900
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://@application.server.ip@:@eureka.application.port@/eureka/
+spring:
+  application:
+    name: order-info-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/dq_springcloud?characterEncoding=utf8
+    username: root
+    password: root123
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect

@@ -1,0 +1,23 @@
+server:
+  port: 8050
+
+eureka:
+  instance:
+    prefer-ip-address: true   #是否显示主机的IP
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/   #指定Eureka服务端地址
+#      defaultZone: http://eureka-server:8761/eureka/
+spring:
+  application:
+    name: dq-zuul-service
+
+zuul:
+  routes:
+    order-service:   #zuul的唯一标识
+      path: /order-service/**   #需要映射的路径
+      serviceId: order-info-service   #Eureka中的serviceId
+    user-service:
+      path: /user-service/**
+      serviceId: user-info-service
+  ignored-services: '*'

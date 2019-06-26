@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: consumer-movie
+  thymeleaf:
+    #是否开启模板缓存
+    cache: false
+    #设置模板的模式
+    mode: HTML5
+#    prefix: classpath:/myTemplates/    修改模板存放的目录
+  cloud:
+    config:
+#      uri: http://192.168.255.1:8760
+      profile: dev
+      label: master
+      discovery:
+        #表示使用服务发现组件中的Config Server,而不自己指定Config Server
+        enabled: true
+        #指定Config Server在服务发现中的serviceId,默认是configserver
+        service-id: config-service
+      username: user
+      password: password123
