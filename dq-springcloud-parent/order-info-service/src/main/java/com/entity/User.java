@@ -17,9 +17,11 @@ public class User implements Serializable {
     private Long id;
 
     private String name;
-
+    private String email;
+    private Integer sex;
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date createdate;
+    private String password;
 
     @ManyToOne
     @JoinColumn(name = "did")
@@ -46,6 +48,30 @@ public class User implements Serializable {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public Integer getSex() {
+        return sex;
+    }
+
+    public void setSex(Integer sex) {
+        this.sex = sex;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public Date getCreatedate() {
