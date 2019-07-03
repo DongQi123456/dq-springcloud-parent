@@ -21,6 +21,8 @@
         <swagger.version>2.9.2</swagger.version>
         <!--localhost-->
         <application.server.ip>192.168.0.119</application.server.ip>
+        <mysql.ip>192.168.0.109</mysql.ip>
+        <redis.ip>192.168.0.109</redis.ip>
         <eureka.application.port>8762</eureka.application.port>
         <user.application.port>8081</user.application.port>
     </properties>
