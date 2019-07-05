@@ -2,9 +2,3 @@ eureka:
   build: .
   ports:
     - "8761:8761"
-order:
-  build: .
-  ports:
-    - "7900:7900"
-  links:
-    - eureka
