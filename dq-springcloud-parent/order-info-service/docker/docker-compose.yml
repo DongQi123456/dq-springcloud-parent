@@ -1,6 +1,9 @@
 order:
   build: .
+  networks:
+    - eureka-net
   ports:
     - "7900:7900"
-  links:
-    - eureka
+networks:
+  eureka-net:
+    driver: host

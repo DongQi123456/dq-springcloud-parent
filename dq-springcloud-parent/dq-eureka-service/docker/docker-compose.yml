@@ -1,4 +1,9 @@
 eureka:
   build: .
+  networks:
+    - eureka-net
   ports:
     - "8761:8761"
+networks:
+  eureka-net:
+    driver: host
