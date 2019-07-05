@@ -20,8 +20,8 @@
         <java.version>1.8</java.version>
         <swagger.version>2.9.2</swagger.version>
         <!--localhost-->
-        <application.server.ip>127.0.0.1</application.server.ip>
-<!--        <application.server.ip>192.168.65.129</application.server.ip>-->
+<!--        <application.server.ip>127.0.0.1</application.server.ip>-->
+        <application.server.ip>192.168.65.129</application.server.ip>
         <mysql.ip>192.168.0.114</mysql.ip>
         <redis.ip>192.168.0.114</redis.ip>
         <eureka.application.port>8761</eureka.application.port>
