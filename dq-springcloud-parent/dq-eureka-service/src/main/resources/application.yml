@@ -8,6 +8,6 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://eureka-server:@eureka.application.port@/eureka/
+      defaultZone: http://@application.server.ip@:@eureka.application.port@/eureka/
 #上线测试需要使用以下配置，eureka-server表示对应的服务名称
 #      defaultZone: http://eureka-server:${server.port}/eureka/
