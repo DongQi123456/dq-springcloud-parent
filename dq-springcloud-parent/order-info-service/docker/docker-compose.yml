@@ -1,5 +1,6 @@
 order:
   build: .
-  networks: host
+  networks:
+    - host
   ports:
     - "7900:7900"
