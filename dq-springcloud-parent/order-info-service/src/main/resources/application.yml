@@ -6,7 +6,7 @@ eureka:
     ip-address: @application.server.ip@
   client:
     service-url:
-      defaultZone: http://localhost:@eureka.application.port@/eureka/
+      defaultZone: http://eureka-server:@eureka.application.port@/eureka/
 spring:
   application:
     name: order-info-service
