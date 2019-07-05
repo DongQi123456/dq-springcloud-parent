@@ -1,3 +1,7 @@
+eureka:
+  build: .
+  ports:
+    - "8761:8761"
 order:
   build: .
   ports:
