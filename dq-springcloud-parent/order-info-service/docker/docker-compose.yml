@@ -1,6 +1,10 @@
+eureka:
+  build: ./eureka
+  ports:
+    - "8761:8761"
 order:
-  build: .
+  build: ./order
   ports:
     - "7900:7900"
   links:
-    - docker_eureka
+    - eureka
