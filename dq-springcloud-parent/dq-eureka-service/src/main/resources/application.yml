@@ -9,5 +9,7 @@ eureka:
     fetch-registry: false
     service-url:
       defaultZone: http://@application.server.ip@:@eureka.application.port@/eureka/
+  instance:
+    prefer-ip-address: true
 #上线测试需要使用以下配置，eureka-server表示对应的服务名称
 #      defaultZone: http://eureka-server:${server.port}/eureka/

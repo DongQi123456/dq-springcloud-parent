@@ -3,7 +3,6 @@ server:
 eureka:
   instance:
     prefer-ip-address: true
-    ip-address: @application.server.ip@
   client:
     service-url:
       defaultZone: http://@application.server.ip@:@eureka.application.port@/eureka/
