@@ -1,6 +1,4 @@
 eureka:
   build: .
-  networks:
-    - host
   ports:
     - "8761:8761"

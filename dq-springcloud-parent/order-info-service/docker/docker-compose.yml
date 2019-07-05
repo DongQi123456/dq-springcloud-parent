@@ -1,6 +1,6 @@
 order:
   build: .
-  networks:
-    - host
   ports:
     - "7900:7900"
+  links:
+    - docker_eureka
