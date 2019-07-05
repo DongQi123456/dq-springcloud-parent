@@ -7,13 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="dq-config-service" />
+        <module name="dq-provider-user-service" />
         <module name="dq-eureka-service" />
         <module name="dq-security-service" />
         <module name="dq-shiro-service" />
         <module name="dq-zuul-service" />
         <module name="dq-user-info-service" />
         <module name="dq-consumer-movie-service" />
-        <module name="dq-provider-user-service" />
         <module name="order-info-service" />
       </profile>
     </annotationProcessing>
