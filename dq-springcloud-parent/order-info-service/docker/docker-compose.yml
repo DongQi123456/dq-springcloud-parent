@@ -1,5 +1,5 @@
 order:
-  build: ./order
+  build: .
   ports:
     - "7900:7900"
   links:
