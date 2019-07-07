@@ -1,13 +1,8 @@
-services:
-  eureka:
-    build: .
-    image: eureka-service
-    networks:
-      - eureka-host
-    ports:
-      - "8761:8761"
-
-
+eureka:
+  build: .
+  ports:
+    - "8761:8761"
 networks:
-  eureka-host:
-    driver: bridge
+  default:
+    external:
+      name: host
