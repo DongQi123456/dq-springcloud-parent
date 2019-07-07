@@ -2,7 +2,3 @@ eureka:
   build: .
   ports:
     - "8761:8761"
-networks:
-  default:
-    external:
-      name: host
