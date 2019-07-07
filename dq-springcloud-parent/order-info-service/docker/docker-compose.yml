@@ -3,4 +3,4 @@ order:
   ports:
     - "7900:7900"
   links:
-    - docker_eureka_1
+    - "docker_eureka:docker_eureka_1"
