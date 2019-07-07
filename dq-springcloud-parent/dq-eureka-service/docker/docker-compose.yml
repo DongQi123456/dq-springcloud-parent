@@ -1,10 +1,12 @@
-eureka:
-  build: .
-  image: eureka-service
-  networks:
-    - eureka-host
-  ports:
-    - "8761:8761"
+services:
+  eureka:
+    build: .
+    image: eureka-service
+    networks:
+      - eureka-host
+    ports:
+      - "8761:8761"
+
 
 networks:
   eureka-host:
