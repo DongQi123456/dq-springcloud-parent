@@ -25,7 +25,7 @@
         <mysql.ip>192.168.0.114</mysql.ip>
         <redis.ip>192.168.0.114</redis.ip>
         <eureka.application.port>8761</eureka.application.port>
-        <user.application.port>8081</user.application.port>
+        <user.application.port>8082</user.application.port>
     </properties>
 
     <dependencyManagement>
