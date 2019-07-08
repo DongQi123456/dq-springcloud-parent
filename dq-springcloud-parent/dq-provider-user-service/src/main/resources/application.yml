@@ -1,9 +1,10 @@
+
 spring:
   application:
     name: dq-provider-user-service
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost/dq_springcloud
+    url: jdbc:mysql://192.168.0.114:3306/dq_springcloud
     username: root
     password: root123
 
@@ -20,7 +21,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://@application.server.ip@:8761/eureka/
   instance:
     prefer-ip-address: true   #将自己的IP注册到Eureka Server
 logging:
@@ -37,4 +38,5 @@ info:
     java:
       source: @java.version@
       target: @java.version@
-
+server:
+  port: 8081
