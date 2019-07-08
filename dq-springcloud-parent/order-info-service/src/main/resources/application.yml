@@ -10,7 +10,7 @@ spring:
   application:
     name: order-info-service
   datasource:
-    url: jdbc:mysql://192.168.0.105:3306/dq_springcloud?characterEncoding=utf8
+    url: jdbc:mysql://192.168.0.114:3306/dq_springcloud?characterEncoding=utf8
     username: root
     password: root123
     type: com.alibaba.druid.pool.DruidDataSource
@@ -50,7 +50,7 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.MySQL5Dialect
   redis:
-    host: 192.168.0.105
+    host: 192.168.0.114
     port: 6379
     pool:
       max-idle: 8
