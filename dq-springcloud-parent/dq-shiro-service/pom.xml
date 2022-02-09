@@ -12,7 +12,7 @@
     <artifactId>dq-shiro-service</artifactId>
 
     <properties>
-        <shiro.version>1.4.0</shiro.version>
+        <shiro.version>1.7.1</shiro.version>
         <fastjson.version>1.2.47</fastjson.version>
     </properties>
 
